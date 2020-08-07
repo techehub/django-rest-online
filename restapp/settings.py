@@ -82,6 +82,20 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'djangotest1',
+        'USER':'root',
+        'PASSWORD':'admin123',
+        'HOST':'localhost',
+        'PORT':'3306'
+    }
+}
+
+'''
 
 
 # Password validation

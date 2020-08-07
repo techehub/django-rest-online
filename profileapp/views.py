@@ -50,6 +50,8 @@ class ProfileDetailView (APIView):
 class ProfileView (APIView):
 
     def get(self, request):
+        print  ("--------",request.GET['name'])
+
         profiles= Profile.objects.all ()
         if profiles:
             serializer = ProfileSerializer(profiles, many=True)
